@@ -1,0 +1,11 @@
+@mixin borderColor($color) {
+    border: 2px solid $color;
+}
+
+@mixin displayMode($display, $flex-direction, $justify-content, $aling-itens, $gap){
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $aling-itens;
+    gap: $gap;
+}

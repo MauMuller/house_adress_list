@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script defer src="../js/controller/controller.js"></script>
+    <script defer src="../js/animations/load_painel.js"></script>
+    <script defer src="../js/methods/insertUrlIntoIframe.js"></script>
+    <script defer src="../js/transitions/goAnySide.js"></script>
+    <script defer src="../js/models/formControl.js"></script>
+    <script defer src="../js/models/house.js"></script>
+    <script defer src="../js/models/houseList.js"></script>
+    <script defer src="../js/models/manager.js"></script>
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/methods/goToTitle.js"></script>
+    <title>....: House Adress :....</title>
+</head>
+<body class="flexbox_container bg-color_black_first overflow-auto md:overflow-y-hidden">
+    <div class="bg-color_black_first md:absolute inset-0 flex flex-col md:flex-row">
+        <aside class="bg-color_white_first w-full md:w-1/3 p-2 h-full shadow-shadow_painel md:rounded-r hidden flex-col justify-start items-center gap-3 md:overflow-y-auto scrollbar-thin scrollbar-thumb-neutral-400 painel">
+            <div class="w-12/12">
+                <h1 class="text-color_green_thirty font-extrabold text-3xl nc:text-4xl font-sans">HOUSE’S ADRESS LIST</h1>
+                <h2 class="text-color_green_first font-bold text-base nc:text-lg">JUST A JS MANIPULATION</h2>
+            </div>
+
+            <ul class="border-y p-8 gap-4 w-full border-color_black_first flex flex-col nc:flex-row items-center justify-center">
+                <li class="w-full nc:w-1/2 bg-color_green_second shadow-shadow_btn flex items-center justify-center h-full rounded cursor-pointer active:shadow-shadown_actived_btn" title="Lista de Endereços"> 
+                    <a href="./iframes/adress.html" class="btn_task p-4 w-full h-full text-center"><i class="bi bi-list-ul text-4xl font-bold text-shadow"></i></a>
+                </li>
+                <li class="w-full nc:w-1/2 bg-color_green_second shadow-shadow_btn flex items-center justify-center h-full rounded cursor-pointer active:shadow-shadown_actived_btn" title="Dúvidas em relação ao projeto">
+                   <a href="./iframes/doubt.html" class="btn_task w-full p-4 h-full text-center"><span class="text-4xl font-bold text-shadow">?</span></a>
+                </li>
+                <li class="w-full nc:w-1/2 bg-color_green_second shadow-shadow_btn flex items-center justify-center h-full rounded cursor-pointer active:shadow-shadown_actived_btn" title="Marketing bonito de ver">
+                    <a href="./iframes/media.html" class="btn_task w-full p-4 h-full text-center"><i class="bi bi-collection-play-fill text-4xl font-bold rotate-180 text-shadow"></i></a>
+                </li>
+            </ul>
+
+            <form class="p-2 w-full flex flex-col gap-2 border-b border-color_black_first form_painel">
+                <fieldset class="rounded-md w-full shadow-shadow_btn inputs_btn_painel disabled:opacity-40">
+                    <legend for="nResidencia" class="mx-2 font-bold">Número da Residência</legend>
+                    <input type="text" name="" id="nResidencia" class="input_text bg-transparent w-full h-full pb-2 px-2 outline-none border-none" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="rounded-md w-full shadow-shadow_btn inputs_btn_painel disabled:opacity-40">
+                    <legend for="nResidencia" class="mx-2 font-bold">Bairro</legend>
+                    <input type="text" name="" id="nResidencia" class="input_text bg-transparent w-full h-full pb-2 px-2 outline-none border-none" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="rounded-md w-full shadow-shadow_btn inputs_btn_painel disabled:opacity-40">
+                    <legend for="nResidencia" class="mx-2 font-bold">Cidade</legend>
+                    <input type="text" name="" id="nResidencia" class="input_text bg-transparent w-full h-full pb-2 px-2 outline-none border-none" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="rounded-md w-full shadow-shadow_btn inputs_btn_painel disabled:opacity-40">
+                    <legend for="nResidencia" class="mx-2 font-bold">Área da Casa</legend>
+                    <input type="text" name="" id="nResidencia" class="input_text bg-transparent w-full h-full pb-2 px-2 outline-none border-none" autocomplete="off">
+                </fieldset>
+
+                <div class="mt-10 flex flex-col gap-3 mb-5">
+                    <select class="input_text w-full rounded-md shadow-shadow_btn p-2 outline-none cursor-pointer inputs_btn_painel disabled:opacity-40">
+                        <option value="">Filtre o que deseja pesquisar</option>
+                        <option class="option_input" value="Número da Residência">Número da Residência</option>
+                        <option class="option_input" value="Bairro">Bairro</option>
+                        <option class="option_input" value="Cidade">Cidade</option>
+                        <option class="option_input" value="Área da Casa">Área da Casa</option>
+                    </select>
+
+                    <fieldset class="rounded-md w-full shadow-shadow_btn disabled:opacity-40" disabled>
+                        <legend for="nResidencia" class="mx-2 font-bold">Pesquise pela/o <span class="text-color_green_thirty span_search">...</span></legend>
+                        <input type="text" name="" id="nResidencia" class="input_text bg-transparent w-full h-full pb-2 px-2 outline-none border-none" autocomplete="off">
+                    </fieldset>
+                </div>
+
+                <div class="flex w-full flex-col gap-4 mb-6">
+                    <input type="button" value="Adicionar Endereço" class="btn_form rounded-md cursor-pointer w-full bg-color_black_first text-color_white_first font-sans p-3 uppercase font-bold shadow-shadow_btn active:shadow-shadown_actived_btn inputs_btn_painel disabled:opacity-40">
+                    <input type="button" value="Remover Todos Endereços" class="btn_form rounded-md cursor-pointer w-full bg-color_black_first text-color_white_first font-sans p-3 uppercase font-bold shadow-shadow_btn active:shadow-shadown_actived_btn inputs_btn_painel disabled:opacity-40">
+                </div>
+            </form>
+
+            <ul class="w-full flex flex-col justify-evenly items-center nc:flex-row p-2">
+                <li><a href="" target="_blank" class="grayscale-0 hover:text-gray-500 font-bold"><i class="bi bi-github"></i> GITHUB</a></li>
+                <li><a href="" target="_blank" class="grayscale-0 hover:text-blue-500 font-bold"><i class="bi bi-linkedin"></i> LINKEDIN</a></li>
+                <li><a href="" target="_blank" class="grayscale-0 hover:text-pink-500 font-bold"><i class="bi bi-instagram"></i> INSTAGRAM</a></li>
+            </ul>
+        </aside>
+        <iframe src="./iframes/adress.html" class="w-full h-screen md:w-2/3 md:h-full iframe_select overflow-x-hidden" frameborder="0" name="0"></iframe>
+    </div>
+
+
+    <div class="fullscren_container absolute inset-0 h-screen md:h-auto items-center justify-center hidden bg-color_black_fourty backdrop-blur-sm overflow-x-hidden">
+        <div class="w-80% p-2 z-10 overflow-x-hidden">
+
+            <section class="w-full flex justify-end translate-y-3 gap-4">
+                <ul class="flex items-end gap-3">
+                    <p class="text-color_white_first text-sm font-bold">Navegue até o título desejado:</p>
+                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Número da Residência"><i class="bi bi-123 text-xl font-black"></i></a></li>
+                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Bairro"><i class="bi bi-house-door text-xl font-black"></i></li>
+                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Cidade"><i class="bi bi-building text-xl font-black"></i></li>
+                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Área da Casa"><i class="bi bi-textarea-resize text-xl font-black"></i></li>
+                </ul>
+
+                <div class="fullscreenClose bg-color_white_second w-16 text-center rounded-t-lg  cursor-pointer hover:bg-color_red_second hover:text-color_white_second hover:transition-all transition-all">
+                    <i class="bi bi-x text-4xl"></i>
+                </div>
+            </section>
+
+            <section class="w-full overflow-y-auto scrollbar-thin scrollbar-thumb-color_black_thirty rounded-l-lg rounded-b-none z-10 relative scroll-smooth bg-transparent">
+                <fieldset class="fieldset_house flex flex-col gap-8 p-5 bg-color_white_second w-full rounded-l-lg rounded-b-none justify-center items-center scroll-smooth">
+                    <legend class="bg-color_white_thirty px-2 py-0 mx-2 font-bold rounded-md shadow-shadow_indice">Casa <span class="fullscreenLegend">a</span></legend>
+
+                    <div class="data_house overflow-x-hidden break-words w-65rem">
+                        <h2 class="font-bold border-b-2 border-color_black_thirty text-color_black_second">Número da Residência</h2>
+                        <p class="fullscreenValuesHouse outline-none text-sm text-color_black_second border-transparent  w-full whitespace-pre-line bg-transparent">a</p>
+                    </div>
+
+                    <div class="data_house overflow-x-hidden break-words w-65rem">
+                        <h2 class="font-bold border-b-2 border-color_black_thirty text-color_black_second">Bairro</h2>
+                        <p class="fullscreenValuesHouse outline-none text-sm text-color_black_second border-transparent bg-transparent ">a</p>
+                    </div>
+
+                    <div class="data_house overflow-x-hidden break-words w-65rem">
+                        <h2 class="font-bold border-b-2 border-color_black_thirty text-color_black_second">Cidade</h2>
+                        <p class="fullscreenValuesHouse border-none outline-none text-sm text-color_black_second bg-transparent">a</p>
+                    </div>
+                
+                    <div class="data_house overflow-x-hidden break-words w-65rem">
+                        <h2 class="font-bold border-b-2 border-color_black_thirty text-color_black_second">Área da Casa</h2>
+                        <p class="fullscreenValuesHouse border-none outline-none text-sm text-color_black_second w-full whitespace-pre-wrap overflow-hidden bg-transparent">a</p>
+                    </div>
+
+                </fieldset>
+                <div class="fullscreenRandomColor bg-white w-full rounded-b-md p-2"></div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
