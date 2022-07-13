@@ -1,0 +1,37 @@
+@keyframes button_large {
+    0%{
+        background-color: linear-gradient(90deg, $color_black_first 0% );
+    }
+    100%{
+        background-color: linear-gradient(90deg, $color_green_first 100% );
+        // background-color: $color_green_first;
+
+    }
+}
+
+@keyframes translate_center_to_right {
+    0% { transform: translate(0); }
+    100% { transform: translate(20em); }
+}
+
+@keyframes hidden_element_animation {
+    0% { opacity: 1; z-index: 1; }
+    100% { opacity: 0; z-index: -1; }
+}
+
+@keyframes translate_bottom_to_top {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50em); }
+}
+
+@keyframes writing_text {
+    0% { width: 0; }
+    40% { width: 100%; }
+    60% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes border_text {
+    0% { border-right: none; }
+    100% { border-right: 2px solid $color_black_first; }
+}
