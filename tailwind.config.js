@@ -38,7 +38,8 @@ module.exports = {
         '80vh': '80vh',
         '40rem':'40rem',
         '35rem':'35rem',
-        '30rem':'30rem'
+        '30rem':'30rem',
+        '100rem':'100rem'
       },
 
       colors: {
@@ -140,6 +141,10 @@ module.exports = {
         enabledRotationIcon: "500ms enabledRotationIcon ease forwards",
         disabledRotationIcon: "500ms disabledRotationIcon ease forwards"
         
+      },
+
+      fontSize: {
+        bigger_size: '4rem'
       }
     },
 
