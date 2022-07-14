@@ -91,18 +91,18 @@
 
 
     <div class="fullscren_container absolute inset-0 h-screen md:h-auto items-center justify-center hidden bg-color_black_fourty backdrop-blur-sm overflow-x-hidden">
-        <div class="w-80% p-2 z-10 overflow-x-hidden">
+        <div class="w-80% p-2 z-10 overflow-x-hidden pt-24 sm:pt-0 flex flex-col">
 
-            <section class="w-full flex justify-end translate-y-3 gap-4">
-                <ul class="flex items-end gap-3">
-                    <p class="text-color_white_first text-sm font-bold">Navegue até o título desejado:</p>
-                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Número da Residência"><i class="bi bi-123 text-xl font-black"></i></a></li>
-                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Bairro"><i class="bi bi-house-door text-xl font-black"></i></li>
-                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Cidade"><i class="bi bi-building text-xl font-black"></i></li>
-                    <li class="btn_scroll bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-md" title="Área da Casa"><i class="bi bi-textarea-resize text-xl font-black"></i></li>
+            <section class="w-full flex justify-end translate-y-3 gap-4 flex-col sm:flex-row">
+                <ul class="flex items-end gap-3 flex-col sm:flex-row">
+                    <p class="hidden sm:block text-color_white_first text-sm font-bold">Navegue até o título desejado:</p>
+                    <li class="btn_scroll w-full sm:w-auto bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-sm flex items-center justify-center sm:block sm:rounded-md" title="Número da Residência"><i class="bi bi-123 text-xl font-black"></i></a></li>
+                    <li class="btn_scroll w-full sm:w-auto bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-sm flex items-center justify-center sm:block sm:rounded-md" title="Bairro"><i class="bi bi-house-door text-xl font-black"></i></li>
+                    <li class="btn_scroll w-full sm:w-auto bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-sm flex items-center justify-center sm:block sm:rounded-md" title="Cidade"><i class="bi bi-building text-xl font-black"></i></li>
+                    <li class="btn_scroll w-full sm:w-auto bg-color_green_thirty px-2 h-12 translate-y-3 z-0 relative cursor-pointer hover:translate-y-2 transition-all hover:transition-all hover:bg-color_white_first hover:text-color_green_thirty text-color_white_first rounded-sm flex items-center justify-center sm:block sm:rounded-md" title="Área da Casa"><i class="bi bi-textarea-resize text-xl font-black"></i></li>
                 </ul>
 
-                <div class="fullscreenClose bg-color_white_second w-16 text-center rounded-t-lg  cursor-pointer hover:bg-color_red_second hover:text-color_white_second hover:transition-all transition-all">
+                <div class="fullscreenClose bg-color_white_second w-full sm:w-16 text-center sm:rounded-t-lg my-3 sm:my-0 cursor-pointer hover:bg-color_red_second hover:text-color_white_second hover:transition-all transition-all">
                     <i class="bi bi-x text-4xl"></i>
                 </div>
             </section>

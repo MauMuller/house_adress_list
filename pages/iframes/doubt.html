@@ -10,11 +10,11 @@
     <script defer src="../../js/methods/questions.js"></script>
     <title>Dúvidas</title>
 </head>
-<body class="main_body overflow-hidden items-center justify-center list_adress flex-col p-8 hidden">
+<body class="main_body items-center justify-center list_adress flex-col sm:p-8 hidden">
     <div class="w-full flex flex-col justify-center items-center">
-      <section class="flex flex-row gap-3 w-80% justify-center items-center">
-        <img src="../../img/doubt_person.svg" alt="Doubt" class="">
-        <h1 class="text-color_white_first uppercase font-bold text-4xl w-3/5"><span class="text-color_green_first">Dúvidas</span> <br> que podem ajudar</h1>
+      <section class="flex flex-row gap-3 w-80% justify-center items-center p-5">
+        <img src="../../img/doubt_person.svg" alt="Doubt" class="hidden sm:block">
+        <h1 class="text-color_white_first uppercase font-bold text-3xl sm:text-4xl text-center sm:text-left w-full sm:w-3/5"><span class="text-color_green_first">Dúvidas</span> <br> que podem ajudar</h1>
       </section>
 
       <section class="w-full flex flex-col gap-4 justify-start items-center overflow-y-auto h-30rem px-4 py-2 scrollbar-thin scrollbar-thumb-color_black_thirty">
@@ -22,7 +22,7 @@
         <ul class="list-none w-full gap-4 flex-col flex">
 
           <li class="questions bg-color_white_first flex w-full flex-col justify-center items-center shadow-shadow_btn rounded-lg cursor-pointer select-none">
-            <div class="p-5 flex items-start justify-between text-2xl w-full ">
+            <div class="p-5 flex items-center  justify-between text-xl sm:text-2xl w-full">
               <span class="text-color_green_thirty font-bold">Por que criei este projeto??</span> 
               <i class="bi bi-plus-lg font-black text-color_green_thirty"></i>
             </div>
@@ -35,7 +35,29 @@
           </li>
 
           <li class="questions bg-color_white_first flex w-full flex-col justify-center items-center shadow-shadow_btn rounded-lg cursor-pointer select-none">
-            <div class="p-5 flex items-start justify-between text-2xl w-full ">
+            <div class="p-5 flex items-center  justify-between text-xl sm:text-2xl w-full ">
+              <span class="text-color_green_thirty font-bold">Quais técnologias utilizei para fazer?</span> 
+              <i class="bi bi-plus-lg font-black text-color_green_thirty"></i>
+            </div>
+
+            <div class="p-2 w-full hidden">
+              <div class="bg-color_white_thirty rounded-bl-xl rounded-br-xl border border-color_green_thirty gap-3 p-4 flex flex-col">
+                <p class="text-color_black_first">
+                  ~Para fazer esse projeto utilizei algumas linguagens e outras libs, entre elas: 
+                </p>
+
+                <p class="text-color_black_first">
+                      <span class="font-bold">1. HTML</span>, bem óbvio mas foi utilizado;  <br>
+                      <span class="font-bold">2. SASS</span>, o pré-processador éfoi usado na primeira página, depois resolvi mudar a maneira de organizar os estilos. <br>
+                      <span class="font-bold">3. Tailwind</span>, fiquei muito interessado em aprender esse framework e resolvi testar no projeto, resolução, amei utilizar; <br>
+                      <span class="font-bold">4. ECMASript</span>, nosso querido e velho JS, esse não podia falta, até pensei em utilizar o React, mas preferi fazer com o vanilla mesmo;  <br>
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="questions bg-color_white_first flex w-full flex-col justify-center items-center shadow-shadow_btn rounded-lg cursor-pointer select-none">
+            <div class="p-5 flex items-center justify-between text-xl sm:text-2xl w-full ">
               <span class="text-color_green_thirty font-bold">Como que funciona esse projeto?</span> 
               <i class="bi bi-plus-lg font-black text-color_green_thirty"></i>
             </div>
@@ -60,7 +82,7 @@
           </li>
 
           <li class="questions bg-color_white_first flex w-full flex-col justify-center items-center shadow-shadow_btn rounded-lg cursor-pointer select-none">
-            <div class="p-5 flex items-start justify-between text-2xl w-full ">
+            <div class="p-5 flex items-center justify-between text-xl sm:text-2xl w-full ">
               <span class="text-color_green_thirty font-bold">Entendi, mas e esses campos aí? Para que serve?</span> 
               <i class="bi bi-plus-lg font-black text-color_green_thirty"></i>
             </div>
@@ -83,23 +105,27 @@
           </li>
 
           <li class="questions bg-color_white_first flex w-full flex-col justify-center items-center shadow-shadow_btn rounded-lg cursor-pointer select-none">
-            <div class="p-5 flex items-start justify-between text-2xl w-full ">
-              <span class="text-color_green_thirty font-bold">Entendi, mas e esses campos aí? Para que serve?</span> 
+            <div class="p-5 flex items-center justify-between text-xl sm:text-2xl w-full ">
+              <span class="text-color_green_thirty font-bold">Supondo que foi adicionado o endereço, e agora?</span> 
               <i class="bi bi-plus-lg font-black text-color_green_thirty"></i>
             </div>
 
             <div class="p-2 w-full hidden">
               <div class="bg-color_white_thirty rounded-bl-xl rounded-br-xl border border-color_green_thirty gap-3 p-4 flex flex-col">
                   <p class="text-color_black_first">
-                    ~Os campos ao lado, servem para adicionarem novas informações sobre algum endereço, que ficará salvo em uma lista com diversos endereços. Preenchendo os campos e clicando no botão <span class="font-bold">"Adicionar Endereço"</span> é possivel ver seu novo endereço surgindo!!
+                    ~Ao adicionar, tu vai conseguir perceber aparecerá uma <span class="font-bold">house</span> com todas as informações que você digitou, assim como alguns botões ao lado dela e uma barra colorida abaixo.
                   </p>
 
                   <p class="text-color_black_first">
-                    Além disso, também é possível clicar no botão <span class="font-bold">"Remover Todos Endereços"</span> para, assim como o nome fala, remover tudo.
+                    Os botões servem para funcionalidades específicas da casa, sendo elas: <br>
+
+                      <span class="font-bold">1. <i class="bi bi-x-square-fill text-color_red_second font-sans text-base"></i></span> : Serve para excluir a casa em específico; <br>
+                      <span class="font-bold">2. <i class="bi bi-fullscreen text-color_black_second font-sans text-base"></i></span> : Mostrar as informações em tela cheia de uma forma mais detalhada; <br>
+                      <span class="font-bold">3. <i class="bi bi-pencil-square text-color_black_second font-sans text-base"></i></span> : Editar as informações da casa em específico. Aparecerá o <i class="bi bi-patch-check-fill pointer-events-none text-color_green_first font-sans text-base"></i> para confirmar as moficações que tu fez, porém, caso não queria modificar, basta recarregar a página que tudo volta ao normal;
                   </p>
 
                   <p class="text-color_black_first">
-                    Por fim, ainda desenvolvi um campo de pesquisa a partir de filtros, onde tu pode selecionar algum filtro para a pesquisa do endereço em específico.
+                    Já a barra colorida serve apenas para destacar os endereços, fiz um algoritmo para gerar hexadecimais aleatórios para colocar no projeto e resolvi usar como uma parte das <span class="font-bold text-color_green_thirty">"casas"</span>.
                   </p>
               </div>
             </div>
