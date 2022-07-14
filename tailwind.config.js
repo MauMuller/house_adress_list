@@ -46,6 +46,7 @@ module.exports = {
         color_green_first: '#47CE9E',
         color_green_second: '#C7F6E6',
         color_green_thirty: '#0A5B3F',
+        color_green_fourty: '#EFFFFA',
 
         //BLACK
         color_black_first: '#2D3633',
