@@ -30,6 +30,8 @@ module.exports = {
         //95%
         '95%':'95%',
 
+        '35rem':'35rem',
+
         //65rem
         '65rem':'65rem',
       },
@@ -144,7 +146,8 @@ module.exports = {
       },
 
       fontSize: {
-        bigger_size: '4rem'
+        bigger_size: '7rem',
+        icons_size: '10rem'
       }
     },
 
