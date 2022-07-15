@@ -12,32 +12,30 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       width: {
-        //5%
         '5%':'5%',
-
-        //10%
         '10%':'10%',
-
+        '15%':'15%',
+        '20%':'20%',
+        '35%':'35%',
+        '40%':'40%',
         '50%':'50%',
-
-        //90%
+        '60%':'60%',
+        '65%':'65%',
         '90%':'90%',
-
-        //80%
         '80%':'80%',
-
-        //95%
+        '85%':'85%', 
         '95%':'95%',
-
         '35rem':'35rem',
-
-        //65rem
         '65rem':'65rem',
       },
 
       height: {
         '80vh': '80vh',
+        '80rem':'80rem',
+        '60rem':'60rem',
+        '50rem':'50rem',
         '40rem':'40rem',
         '35rem':'35rem',
         '30rem':'30rem',
@@ -125,6 +123,22 @@ module.exports = {
         disabledRotationIcon: {
           '0%': { transform: 'rotate(90deg)' },
           '100%': { transform: 'rotate(0deg)' }
+        },
+        extendingContainerMedia: {
+          '0%': { width: '35%' },
+          '100%': { width: '90%' }
+        },
+        defaultContainerMedia: {
+          '0%': { width: '90%' },
+          '100%': { width: '35%' }
+        },
+        increagingWidthText: {
+          '0%': { width: '0' },
+          '100%':{ width: '100%' }
+        },
+        infiniteTextCursor:{
+          '0%': { 'border-right': 'none' },
+          '100%': { 'border-right':'2px solid #fff' }
         }
       },
 
@@ -141,15 +155,25 @@ module.exports = {
         show_elements: '1s show_elements ease',
 
         enabledRotationIcon: "500ms enabledRotationIcon ease forwards",
-        disabledRotationIcon: "500ms disabledRotationIcon ease forwards"
+        disabledRotationIcon: "500ms disabledRotationIcon ease forwards",
         
+
+        extendingContainerMedia: "800ms extendingContainerMedia ease",
+        defaultContainerMedia: "800ms defaultContainerMedia ease",
+        twoAnimations: '1s increagingWidthText linear, 1s infiniteTextCursor 500ms linear infinite'
       },
 
       fontSize: {
-        bigger_size: '7rem',
-        icons_size: '10rem'
-      }
+        bigger_size: '5rem',
+        icons_size: '12rem'
+      },
+
+      borderRadius: {
+        icons: '0 6rem 0 6rem',
+        container_img: '0 6rem 0 0'
+      },
     },
+
 
     boxShadow: {
         shadow_painel: '5px 5px 10px #47CE9E',
@@ -160,10 +184,10 @@ module.exports = {
         shadow_input: '1px 4px 10px #00000070',
         shadow_indice: '0 0 10px #00000070',
         shadow_close: '0 0 8px #FF0000'
-    },
-    
+    },  
   },
+
   plugins: [
     require('tailwind-scrollbar'),
-  ],
+  ]
 }
