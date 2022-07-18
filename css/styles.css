@@ -720,6 +720,10 @@ video {
   width: 35%;
 }
 
+.w-90\% {
+  width: 90%;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -1379,6 +1383,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-icons_size {
   font-size: 12rem;
 }
@@ -1744,6 +1753,14 @@ video {
     display: block;
   }
 
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -1762,6 +1779,60 @@ video {
 
   .sm\:w-3\/5 {
     width: 60%;
+  }
+
+  .sm\:w-35\% {
+    width: 35%;
+  }
+
+  @-webkit-keyframes defaultContainerMedia {
+    0% {
+      width: 90%;
+    }
+
+    100% {
+      width: 35%;
+    }
+  }
+
+  @keyframes defaultContainerMedia {
+    0% {
+      width: 90%;
+    }
+
+    100% {
+      width: 35%;
+    }
+  }
+
+  .sm\:animate-defaultContainerMedia {
+    -webkit-animation: 800ms defaultContainerMedia ease;
+            animation: 800ms defaultContainerMedia ease;
+  }
+
+  @-webkit-keyframes hidden_elements {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes hidden_elements {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .sm\:animate-hidden_elements {
+    -webkit-animation: 1s hidden_elements ease forwards;
+            animation: 1s hidden_elements ease forwards;
   }
 
   .sm\:flex-row {
@@ -1805,6 +1876,73 @@ video {
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-icons_size {
+    font-size: 12rem;
+  }
+
+  .group:hover .sm\:group-hover\:flex {
+    display: flex;
+  }
+
+  .group:hover .sm\:group-hover\:w-90\% {
+    width: 90%;
+  }
+
+  @-webkit-keyframes extendingContainerMedia {
+    0% {
+      width: 35%;
+    }
+
+    100% {
+      width: 90%;
+    }
+  }
+
+  @keyframes extendingContainerMedia {
+    0% {
+      width: 35%;
+    }
+
+    100% {
+      width: 90%;
+    }
+  }
+
+  .group:hover .sm\:group-hover\:animate-extendingContainerMedia {
+    -webkit-animation: 800ms extendingContainerMedia ease;
+            animation: 800ms extendingContainerMedia ease;
+  }
+
+  @-webkit-keyframes show_elements {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes show_elements {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .group:hover .sm\:group-hover\:animate-show_elements {
+    -webkit-animation: 1s show_elements ease;
+            animation: 1s show_elements ease;
   }
 }
 
