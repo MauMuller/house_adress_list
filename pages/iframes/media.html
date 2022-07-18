@@ -1,87 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 bg-color_green_thirty">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 bg-color_green_thirty"
+    />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
     <script defer src="../../js/animations/load_iframe.js"></script>
     <script defer src="../../js/methods/fixingContainerMedia.js"></script>
     <title>Document</title>
-</head>
-<body class="main_body overflow-y-auto overflow-x-hidden items-center select-none justify-center list_adress hidden flex-col gap-6">
+  </head>
+  <body
+    class="main_body overflow-y-auto overflow-x-hidden items-center select-none justify-center list_adress hidden flex-col gap-6 scrollbar-thin scrollbar-thumb-color_black_thirty"
+  >
     <section class="w-full">
-        <div class="w-full bg-color_green_fourty shadow-shadow_btn p-4 flex flex-col gap-2 sm:rounded-bl-full sm:rounded-br-full justify-center items-center">
-            <h1 class="t uppercase w-auto text-center font-black text-3xl">Quer <span class="text-color_green_first">acompanhar</span> outros <br> <span class="text-color_green_first">projetos</span>?</h1>
-            <h2 class="font-extralight uppercase text-xl t">Se liga nas opções abaixo!</h2>
+      <div
+        class="w-full bg-color_green_fourty shadow-shadow_btn p-4 flex flex-col gap-2 sm:rounded-bl-full sm:rounded-br-full justify-center items-center"
+      >
+        <h1 class="t uppercase w-auto text-center font-black text-3xl">
+          Quer <span class="text-color_green_first">acompanhar</span> outros
+          <br />
+          <span class="text-color_green_first">projetos</span>?
+        </h1>
+        <h2 class="font-extralight uppercase text-xl t">
+          Se liga nas opções abaixo!
+        </h2>
+      </div>
+    </section>
+    <section class="w-full h-80rem flex flex-row">
+      <aside class="flex flex-row gap-3 w-15% h-full justify-end p-7 z-20">
+        <ul class="flex justify-around flex-col">
+          <li class="text-color_white_second text-4xl font-sans font-bold">
+            1°
+          </li>
+          <li class="text-color_white_second text-4xl font-sans font-bold">
+            2°
+          </li>
+          <li class="text-color_white_second text-4xl font-sans font-bold">
+            3°
+          </li>
+        </ul>
+        <div class="bg-color_white_second h-full w-1"></div>
+      </aside>
+      <main class="w-85% flex flex-col justify-around h-full p-4 z-10">
+        <div class="flex flex-col items-start justify-center">
+          <div class="w-full h-auto group">
+            <article
+              class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end"
+            >
+              <h3 class="text-xl font-bold">GITHUB</h3>
+              <p
+                class="hidden ml-0 group-hover:block break-normal animate- overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5"
+              >
+                https://github.com/MauMuller
+              </p>
+            </article>
+
+            <a
+              href="https://github.com/MauMuller"
+              target="_blank"
+              class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia"
+            >
+              <i
+                class="bi bi-github text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4 2xl:-translate-x-4"
+              ></i>
+              <div
+                class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full p-2"
+              >
+                <img
+                  src="../../img/profiles/github_profile.svg"
+                  class="full rounded-container_img shadow-shadow_input"
+                  alt="IMAGEM"
+                />
+              </div>
+            </a>
+          </div>
         </div>
+
+        <div class="flex flex-col items-start justify-center">
+          <div class="w-full h-auto group">
+            <article
+              class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end"
+            >
+              <h3 class="text-xl font-bold">LINKEDIN</h3>
+              <p
+                class="hidden ml-0 group-hover:block break-normal w-auto overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5"
+              >
+                https://linkedin.com/in/mauricio-m-s/
+              </p>
+            </article>
+
+            <a
+              href="https://www.linkedin.com/in/mauricio-m-s/"
+              target="_blank"
+              class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia"
+            >
+              <i
+                class="bi bi-linkedin text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4 2xl:-translate-x-4"
+              ></i>
+              <div
+                class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full p-2"
+              >
+                <img
+                  src="../../img/profiles/linkedin_profile.svg"
+                  class="full rounded-container_img shadow-shadow_input"
+                  alt="IMAGEM"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start justify-center">
+          <div class="w-full h-auto group">
+            <article
+              class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end"
+            >
+              <h3 class="text-xl font-bold">INSTAGRAM</h3>
+              <p
+                class="hidden ml-0 group-hover:block break-normal w-auto overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5"
+              >
+                https://www.instagram.com/mauricio_m_s/
+              </p>
+            </article>
+
+            <a
+              href="https://www.instagram.com/mauricio_m_s/"
+              target="_blank"
+              class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia"
+            >
+              <i
+                class="bi bi-instagram text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4 2xl:-translate-x-4"
+              ></i>
+              <div
+                class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full p-2"
+              >
+                <img
+                  src="../../img/profiles/instagram_profile.svg"
+                  class="full rounded-container_img shadow-shadow_input"
+                  alt="IMAGEM"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
     </section>
-    <section class="w-full h-80rem flex flex-row ">
-        <aside class=" flex flex-row gap-3 w-15% h-full justify-end p-7  z-20">
-            <ul class="flex justify-around flex-col">
-                <li class="text-color_white_second text-4xl font-sans font-bold">1°</li>
-                <li class="text-color_white_second text-4xl font-sans font-bold">2°</li>
-                <li class="text-color_white_second text-4xl font-sans font-bold">3°</li>
-            </ul>
-            <div class="bg-color_white_second h-full w-1"></div>
-        </aside>
-        <main class="w-85% flex flex-col justify-around h-full p-4  z-10">
-
-            <div class="flex flex-col items-start justify-center">
-
-                <div class="w-full h-auto group">
-                    <article class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end">
-                        <h3 class="text-xl font-bold">GITHUB</h3>
-                        <p class="hidden ml-0 group-hover:block break-normal animate- overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5">https://github.com/MauMuller</p>
-                    </article>
-                    
-                    <a href="https://github.com/MauMuller" target="_blank" class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia">
-                        <i class="bi bi-github text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4"></i>
-                        <div class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full  p-2">
-                            <img src="../../img/profiles/github_profile.svg" class="full rounded-container_img shadow-shadow_input" alt="IMAGEM">
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-            
-            <div class="flex flex-col items-start justify-center">
-
-                <div class="w-full h-auto group">
-                    <article class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end">
-                        <h3 class="text-xl font-bold">LINKEDIN</h3>
-                        <p class="hidden ml-0 group-hover:block break-normal w-auto overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5">https://linkedin.com/in/mauricio-m-s/</p>
-                    </article>
-                    
-                    <a href="https://www.linkedin.com/in/mauricio-m-s/" target="_blank" class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia">
-                        <i class="bi bi-linkedin text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4"></i>
-                        <div class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full  p-2">
-                            <img src="../../img/profiles/.svg" class="full rounded-container_img shadow-shadow_input" alt="IMAGEM">
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="flex flex-col items-start justify-center">
-
-                <div class="w-full h-auto group">
-                    <article class="font-sans flex flex-row gap-1 text-color_white_first justify-start items-end">
-                        <h3 class="text-xl font-bold">INSTAGRAM</h3>
-                        <p class="hidden ml-0 group-hover:block break-normal w-auto overflow-hidden group-hover:animate-twoAnimations font-light text-sm mb-0.5">https://www.instagram.com/mauricio_m_s/</p>
-                    </article>
-                    
-                    <a href="https://www.instagram.com/mauricio_m_s/" target="_blank" class="cursor-pointer bg-color_green_first flex items-center justify-start w-35% p-1 rounded-icons ml-0 shadow-shadow_btn animate-defaultContainerMedia group-hover:w-90% group-hover:animate-extendingContainerMedia">
-                        <i class="bi bi-instagram text-icons_size flex items-center justify-center text-color_black_first text-shadow w-35% p-4"></i>
-                        <div class="hidden group-hover:flex animate-hidden_elements group-hover:animate-show_elements bg-color_black_first rounded-container_img h-full  p-2">
-                            <img src="../../img/profiles/.svg" class="full rounded-container_img shadow-shadow_input" alt="IMAGEM">
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </main>
-    </section>
-</body>
+  </body>
 </html>

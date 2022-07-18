@@ -1237,11 +1237,6 @@ video {
   border-color: rgb(10 91 63 / var(--tw-border-opacity));
 }
 
-.border-red-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(153 27 27 / var(--tw-border-opacity));
-}
-
 .bg-color_black_first {
   --tw-bg-opacity: 1;
   background-color: rgb(45 54 51 / var(--tw-bg-opacity));
@@ -1739,10 +1734,6 @@ video {
           animation: 1s show_elements ease;
 }
 
-.group:hover .group-hover\:justify-start {
-  justify-content: flex-start;
-}
-
 @media (min-width: 640px) {
   .sm\:my-0 {
     margin-top: 0px;
@@ -1861,6 +1852,13 @@ video {
 
   .scrollbar-thin.md\:overflow-y-hidden {
     overflow-y: hidden;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:-translate-x-4 {
+    --tw-translate-x: -1rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
