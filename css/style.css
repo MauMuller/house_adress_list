@@ -175,14 +175,13 @@ h3 {
   border-top: 350px solid transparent;
 }
 #main_landing_page .sections #background_green {
-  box-shadow: -2px 0 0.75em #0A5B3F;
   position: absolute;
   left: 0;
   right: 0;
   z-index: -2;
   bottom: -55em;
   background-color: #2D3633;
-  height: 130vh;
+  height: 60rem;
 }
 
 /*# sourceMappingURL=style.css.map */

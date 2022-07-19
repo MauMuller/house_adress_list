@@ -31,6 +31,7 @@
                     @include borderColor(green);
 
                     h3{ 
+                        // font-size: 1rem;
                         color: $color_black_first; 
                     }
                 }
@@ -50,14 +51,13 @@
         }
 
         #background_green{
-            box-shadow: -2px 0 0.75em $color_green_thirty;
             position: absolute;
             left: 0;
             right: 0;
             z-index: -2;
             bottom: -55em;
             background-color: $color_black_first;
-            height: 130vh;
+            height: 60rem;
         }
     }
 }

@@ -54,10 +54,7 @@ h3{
 
 .writing_text{
     animation: 3.5s writing_text steps(40, end) infinite;
-    // 400ms border_text linear infinite;
-    // border: 1px solid red;
     overflow: hidden;
-    // text-align: center;
     white-space: nowrap;
     margin: auto 0;
 }
