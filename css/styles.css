@@ -712,16 +712,8 @@ video {
   width: 0.25rem;
 }
 
-.w-85\% {
-  width: 85%;
-}
-
 .w-35\% {
   width: 35%;
-}
-
-.w-90\% {
-  width: 90%;
 }
 
 .max-w-xs {
@@ -1388,6 +1380,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-icons_size {
   font-size: 12rem;
 }
@@ -1781,6 +1778,10 @@ video {
     width: 60%;
   }
 
+  .sm\:w-85\% {
+    width: 85%;
+  }
+
   .sm\:w-35\% {
     width: 35%;
   }
@@ -1843,6 +1844,14 @@ video {
     border-radius: 0.375rem;
   }
 
+  .sm\:rounded-icons {
+    border-radius: 0 6rem 0 6rem;
+  }
+
+  .sm\:rounded-container_img {
+    border-radius: 0 6rem 0 0;
+  }
+
   .sm\:rounded-t-lg {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -1883,8 +1892,9 @@ video {
     line-height: 1.75rem;
   }
 
-  .sm\:text-icons_size {
-    font-size: 12rem;
+  .sm\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
   }
 
   .group:hover .sm\:group-hover\:flex {
@@ -1984,12 +1994,48 @@ video {
     border-bottom-right-radius: 0.25rem;
   }
 
+  .md\:text-icons_size {
+    font-size: 12rem;
+  }
+
   .scrollbar.md\:overflow-y-hidden {
     overflow-y: hidden;
   }
 
   .scrollbar-thin.md\:overflow-y-hidden {
     overflow-y: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:w-45rem {
+    width: 45rem;
+  }
+
+  .lg\:animate-none {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .group:hover .lg\:group-hover\:w-35rem {
+    width: 35rem;
+  }
+
+  .group:hover .lg\:group-hover\:w-45rem {
+    width: 45rem;
+  }
+
+  .group:hover .lg\:group-hover\:animate-none {
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
