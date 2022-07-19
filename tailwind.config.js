@@ -97,7 +97,6 @@ module.exports = {
                     opacity: '1' 
                   }
         },
-
         translate_center_top: {
           '0%': { 
                   transform: 'translateY(0px)',
@@ -108,7 +107,6 @@ module.exports = {
                     opacity: '0' 
                   }
         },
-
         hidden_elements: {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' }
@@ -140,7 +138,13 @@ module.exports = {
         infiniteTextCursor:{
           '0%': { 'border-right': 'none' },
           '100%': { 'border-right':'2px solid #fff' }
-        }
+        },
+        writing_text: {
+          '0%': { width: '0' },
+          '40%': { width: '100%' },
+          '60%': { width: '100%' },
+          '100%': { width: '0' }
+      }
       },
 
       animation: {
@@ -161,7 +165,8 @@ module.exports = {
 
         extendingContainerMedia: "800ms extendingContainerMedia ease",
         defaultContainerMedia: "800ms defaultContainerMedia ease",
-        twoAnimations: '1s increagingWidthText linear, 1s infiniteTextCursor 500ms linear infinite'
+        twoAnimations: '1s increagingWidthText linear, 1s infiniteTextCursor 500ms linear infinite',
+        writing_text: '3.5s writing_text steps(40, end) infinite'
       },
 
       fontSize: {
