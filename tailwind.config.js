@@ -29,7 +29,12 @@ module.exports = {
         '95%':'95%',
         '35rem':'35rem',
         '45rem':'45rem',
+        '55rem':'55rem',
         '65rem':'65rem',
+      },
+
+      spacing:{
+        '60rem':'60rem'
       },
 
       height: {
@@ -97,7 +102,10 @@ module.exports = {
                     opacity: '1' 
                   }
         },
-
+        translate_bottom_center: {
+          '0%': { bottom: '-60rem' },
+          '100%':{ bottom: '0' }
+        },
         translate_center_top: {
           '0%': { 
                   transform: 'translateY(0px)',
@@ -108,7 +116,6 @@ module.exports = {
                     opacity: '0' 
                   }
         },
-
         hidden_elements: {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' }
@@ -140,7 +147,13 @@ module.exports = {
         infiniteTextCursor:{
           '0%': { 'border-right': 'none' },
           '100%': { 'border-right':'2px solid #fff' }
-        }
+        },
+        writing_text: {
+          '0%': { width: '0' },
+          '40%': { width: '100%' },
+          '60%': { width: '100%' },
+          '100%': { width: '0' }
+      }
       },
 
       animation: {
@@ -148,6 +161,8 @@ module.exports = {
         translate_right_center: '1s translate_right_center ease',
         translate_center_left: '1s translate_center_left ease forwards',
         translate_center_right: '1s translate_center_right ease forwards',
+
+        translate_bottom_center: '500ms translate_bottom_center ease forwards',
 
         translate_top_center: '500ms translate_top_center ease forwards',
         translate_center_top: '500ms translate_center_top ease forwards',
@@ -161,7 +176,8 @@ module.exports = {
 
         extendingContainerMedia: "800ms extendingContainerMedia ease",
         defaultContainerMedia: "800ms defaultContainerMedia ease",
-        twoAnimations: '1s increagingWidthText linear, 1s infiniteTextCursor 500ms linear infinite'
+        twoAnimations: '1s increagingWidthText linear, 1s infiniteTextCursor 500ms linear infinite',
+        writing_text: '3.5s writing_text steps(40, end) infinite'
       },
 
       fontSize: {
